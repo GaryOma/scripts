@@ -1,0 +1,263 @@
+1512434030398	geckodriver	INFO	geckodriver 0.19.1
+1512434030401	geckodriver	INFO	Listening on 127.0.0.1:47345
+1512434031499	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.iwvUOy4nIHAj"
+1512434032065	Marionette	INFO	Enabled via --marionette
+1512434033207	Marionette	INFO	Listening on port 41185
+1512434033323	Marionette	WARN	TLS certificate errors will be ignored for this session
+1512434033373	Marionette	DEBUG	Register listener.js for window 2147483649
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1512434086833	geckodriver	INFO	geckodriver 0.19.1
+1512434086836	geckodriver	INFO	Listening on 127.0.0.1:54449
+1512434100099	geckodriver	INFO	geckodriver 0.19.1
+1512434100102	geckodriver	INFO	Listening on 127.0.0.1:42991
+1512434101220	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.rW3gaKcCUrzj"
+1512434101645	Marionette	INFO	Enabled via --marionette
+1512434102683	Marionette	INFO	Listening on port 41827
+1512434102740	Marionette	WARN	TLS certificate errors will be ignored for this session
+1512434102794	Marionette	DEBUG	Register listener.js for window 2147483649
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1512434119893	geckodriver	INFO	geckodriver 0.19.1
+1512434119896	geckodriver	INFO	Listening on 127.0.0.1:53409
+1512434120994	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.6yIdayN5ZhbF"
+1512434121379	Marionette	INFO	Enabled via --marionette
+1512434122394	Marionette	INFO	Listening on port 44629
+1512434122404	Marionette	WARN	TLS certificate errors will be ignored for this session
+1512434122457	Marionette	DEBUG	Register listener.js for window 2147483649
+1512434122486	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1512434122985	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1512434122985	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1512434123318	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://twitter.com/search?q=from%3Arealdonaldtrump%20since%3A2016-10-10%20until%3A2016-10-11"
+1512434123963	Marionette	DEBUG	Received DOM event "pageshow" for "https://twitter.com/search?q=from%3Arealdonaldtrump%20since%3A2016-10-10%20until%3A2016-10-11"
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1512434150247	geckodriver	INFO	geckodriver 0.19.1
+1512434150250	geckodriver	INFO	Listening on 127.0.0.1:36925
+1512434151349	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.w6DDlWFWvYwR"
+1512434151738	Marionette	INFO	Enabled via --marionette
+1512434152762	Marionette	INFO	Listening on port 33805
+1512434152856	Marionette	WARN	TLS certificate errors will be ignored for this session
+1512434152906	Marionette	DEBUG	Register listener.js for window 2147483649
+1512434152939	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1512434153779	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1512434153779	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1512434154153	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://twitter.com/search?q=from%3Arealdonaldtrump%20since%3A2016-10-10%20until%3A2016-10-11"
+1512434154839	Marionette	DEBUG	Received DOM event "pageshow" for "https://twitter.com/search?q=from%3Arealdonaldtrump%20since%3A2016-10-10%20until%3A2016-10-11"
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1512434192153	geckodriver	INFO	geckodriver 0.19.1
+1512434192156	geckodriver	INFO	Listening on 127.0.0.1:56749
+1512434193275	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.t2RFUFhNtOZp"
+1512434193662	Marionette	INFO	Enabled via --marionette
+1512434194687	Marionette	INFO	Listening on port 41893
+1512434194782	Marionette	WARN	TLS certificate errors will be ignored for this session
+1512434194831	Marionette	DEBUG	Register listener.js for window 2147483649
+1512434194852	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1512434195510	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1512434195511	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1512434195869	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://twitter.com/search?q=from%3Arealdonaldtrump%20since%3A2016-10-10%20until%3A2016-10-11"
+1512434196485	Marionette	DEBUG	Received DOM event "pageshow" for "https://twitter.com/search?q=from%3Arealdonaldtrump%20since%3A2016-10-10%20until%3A2016-10-11"
+1512434231425	geckodriver	INFO	geckodriver 0.19.1
+1512434231428	geckodriver	INFO	Listening on 127.0.0.1:44479
+1512434232547	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.fp1kkPtWc1m1"
+1512434232945	Marionette	INFO	Enabled via --marionette
+1512434234043	Marionette	INFO	Listening on port 38781
+1512434234065	Marionette	WARN	TLS certificate errors will be ignored for this session
+1512434234118	Marionette	DEBUG	Register listener.js for window 2147483649
+1512434234140	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1512434234691	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1512434234692	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1512434235049	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://twitter.com/search?q=from%3Arealdonaldtrump%20since%3A2016-10-10%20until%3A2016-10-11"
+1512434235666	Marionette	DEBUG	Received DOM event "pageshow" for "https://twitter.com/search?q=from%3Arealdonaldtrump%20since%3A2016-10-10%20until%3A2016-10-11"
+JavaScript error: https://abs.twimg.com/k/en/13.video_player_a.en.cd9502fafa6f5a312ece.js, line 15: TypeError: t.videoTag is undefined
+JavaScript error: https://abs.twimg.com/k/en/13.video_player_a.en.cd9502fafa6f5a312ece.js, line 15: TypeError: t.videoTag is undefined
+JavaScript error: https://abs.twimg.com/k/en/13.video_player_a.en.cd9502fafa6f5a312ece.js, line 15: TypeError: t.videoTag is undefined
+JavaScript error: https://abs.twimg.com/k/en/13.video_player_a.en.cd9502fafa6f5a312ece.js, line 15: TypeError: t.videoTag is undefined
+JavaScript error: https://abs.twimg.com/k/en/13.video_player_a.en.cd9502fafa6f5a312ece.js, line 15: TypeError: t.videoTag is undefined
+JavaScript error: https://abs.twimg.com/k/en/13.video_player_a.en.cd9502fafa6f5a312ece.js, line 15: TypeError: t.videoTag is undefined
+JavaScript error: https://abs.twimg.com/k/en/13.video_player_a.en.cd9502fafa6f5a312ece.js, line 15: TypeError: t.videoTag is undefined
+JavaScript error: https://abs.twimg.com/k/en/13.video_player_a.en.cd9502fafa6f5a312ece.js, line 15: TypeError: t.videoTag is undefined
+JavaScript error: https://abs.twimg.com/k/en/13.video_player_a.en.cd9502fafa6f5a312ece.js, line 15: TypeError: t.videoTag is undefined
+JavaScript error: https://abs.twimg.com/k/en/13.video_player_a.en.cd9502fafa6f5a312ece.js, line 15: TypeError: t.videoTag is undefined
+JavaScript error: https://abs.twimg.com/k/en/13.video_player_a.en.cd9502fafa6f5a312ece.js, line 15: TypeError: t.videoTag is undefined
+JavaScript error: https://abs.twimg.com/k/en/13.video_player_a.en.cd9502fafa6f5a312ece.js, line 15: TypeError: t.videoTag is undefined
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+1512577644481	geckodriver	INFO	geckodriver 0.19.1
+1512577644504	geckodriver	INFO	Listening on 127.0.0.1:59153
+1512577645507	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.55ewQ62C23HU"
+1512577646345	Marionette	INFO	Enabled via --marionette
+1512577647764	Marionette	INFO	Listening on port 42391
+1512577647830	Marionette	WARN	TLS certificate errors will be ignored for this session
+1512577647882	Marionette	DEBUG	Register listener.js for window 2147483649
+1512577647900	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1512577648649	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1512577648650	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1512577649051	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://twitter.com/search?q=from%3Arealdonaldtrump%20since%3A2016-10-10%20until%3A2016-10-11"
+1512577649874	Marionette	DEBUG	Received DOM event "pageshow" for "https://twitter.com/search?q=from%3Arealdonaldtrump%20since%3A2016-10-10%20until%3A2016-10-11"
+JavaScript error: https://abs.twimg.com/k/en/13.video_player_a.en.44d3584403337cc09663.js, line 15: TypeError: t.videoTag is undefined
+JavaScript error: https://abs.twimg.com/k/en/13.video_player_a.en.44d3584403337cc09663.js, line 15: TypeError: t.videoTag is undefined
+JavaScript error: https://abs.twimg.com/k/en/13.video_player_a.en.44d3584403337cc09663.js, line 15: TypeError: t.videoTag is undefined
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+1512577731378	geckodriver	INFO	geckodriver 0.19.1
+1512577731381	geckodriver	INFO	Listening on 127.0.0.1:35409
+1512577732504	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.VHpB1zxw2lYF"
+1512577732893	Marionette	INFO	Enabled via --marionette
+1512577733927	Marionette	INFO	Listening on port 46725
+1512577734011	Marionette	WARN	TLS certificate errors will be ignored for this session
+1512577734065	Marionette	DEBUG	Register listener.js for window 2147483649
+1512577734098	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1512577734855	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1512577734856	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1512577735252	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://twitter.com/search?q=from%3Arealdonaldtrump%20since%3A2016-10-10%20until%3A2016-10-11"
+1512577736101	Marionette	DEBUG	Received DOM event "pageshow" for "https://twitter.com/search?q=from%3Arealdonaldtrump%20since%3A2016-10-10%20until%3A2016-10-11"
+1512579317262	geckodriver	INFO	geckodriver 0.19.1
+1512579317265	geckodriver	INFO	Listening on 127.0.0.1:43239
+1512579318362	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.YL1p8cMkwVlQ"
+1512579318776	Marionette	INFO	Enabled via --marionette
+
+(firefox:2463): IBUS-WARNING **: The owner of /home/gary/.config/ibus/bus is not root!
+Home directory not accessible: Permission denied
+1512579319861	Marionette	INFO	Listening on port 46319
+1512579319877	Marionette	WARN	TLS certificate errors will be ignored for this session
+1512579319927	Marionette	DEBUG	Register listener.js for window 2147483649
+1512579319955	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1512579320638	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1512579320638	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1512579321011	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://twitter.com/search?q=from%3Arealdonaldtrump%20since%3A2016-10-10%20until%3A2016-10-11"
+1512579322130	Marionette	DEBUG	Received DOM event "pageshow" for "https://twitter.com/search?q=from%3Arealdonaldtrump%20since%3A2016-10-10%20until%3A2016-10-11"
+JavaScript error: https://abs.twimg.com/k/en/13.video_player_a.en.44d3584403337cc09663.js, line 15: TypeError: t.videoTag is undefined
+JavaScript error: https://abs.twimg.com/k/en/13.video_player_a.en.44d3584403337cc09663.js, line 15: TypeError: t.videoTag is undefined
+JavaScript error: https://abs.twimg.com/k/en/13.video_player_a.en.44d3584403337cc09663.js, line 15: TypeError: t.videoTag is undefined
+1512579443214	geckodriver	INFO	geckodriver 0.19.1
+1512579443217	geckodriver	INFO	Listening on 127.0.0.1:39265
+1512579444311	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.jPDbD34M2dRb"
+1512579444758	Marionette	INFO	Enabled via --marionette
+
+(firefox:3774): IBUS-WARNING **: The owner of /home/gary/.config/ibus/bus is not root!
+Home directory not accessible: Permission denied
+1512579445910	Marionette	INFO	Listening on port 32983
+1512579445933	Marionette	WARN	TLS certificate errors will be ignored for this session
+1512579445989	Marionette	DEBUG	Register listener.js for window 2147483649
+1512579446019	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1512579446851	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1512579446851	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1512579447221	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://twitter.com/search?q=from%3Arealdonaldtrump%20since%3A2016-10-10%20until%3A2016-10-11"
+1512579448040	Marionette	DEBUG	Received DOM event "pageshow" for "https://twitter.com/search?q=from%3Arealdonaldtrump%20since%3A2016-10-10%20until%3A2016-10-11"
+Home directory not accessible: Permission denied
+JavaScript error: https://abs.twimg.com/k/en/13.video_player_a.en.44d3584403337cc09663.js, line 15: TypeError: t.videoTag is undefined
+JavaScript error: https://abs.twimg.com/k/en/13.video_player_a.en.44d3584403337cc09663.js, line 15: TypeError: t.videoTag is undefined
+JavaScript error: https://abs.twimg.com/k/en/13.video_player_a.en.44d3584403337cc09663.js, line 15: TypeError: t.videoTag is undefined
+JavaScript error: https://abs.twimg.com/k/en/13.video_player_a.en.44d3584403337cc09663.js, line 15: TypeError: t.videoTag is undefined
+JavaScript error: https://abs.twimg.com/k/en/13.video_player_a.en.44d3584403337cc09663.js, line 15: TypeError: t.videoTag is undefined
+JavaScript error: https://abs.twimg.com/k/en/13.video_player_a.en.44d3584403337cc09663.js, line 15: TypeError: t.videoTag is undefined
+JavaScript error: https://abs.twimg.com/k/en/13.video_player_a.en.44d3584403337cc09663.js, line 15: TypeError: t.videoTag is undefined
+JavaScript error: https://abs.twimg.com/k/en/13.video_player_a.en.44d3584403337cc09663.js, line 15: TypeError: t.videoTag is undefined
+JavaScript error: https://abs.twimg.com/k/en/13.video_player_a.en.44d3584403337cc09663.js, line 15: TypeError: t.videoTag is undefined
+Home directory not accessible: Permission denied
