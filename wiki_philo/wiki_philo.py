@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 import urllib2
 import regex
 import sys
@@ -18,18 +21,13 @@ def getPageName(page):
     name = regex.sub("<(.*?)>", "", name)
     return name
 
-# def checkFirstLinkBottom(page):
-#     links = re.findall("(?s)<div class=\"mw-parser-output\"(?:.*?)|(?:<a href=\"(?P<url>/wiki/(?:.*?)?)\")|(?:<div(?:.*?)<\/div>|<div(?:.*?)<\/div>)|(?:<table class=\"infobox_v2\">(?:.*?)<\/table>)", page)
-#     for link in links:
-#         if not ':' in link:
-#             if link != "":
-#                 return link
-#     print 'error'
-
 def checkFirstLinkBottom(page):
+    # ne va chercher que dans la div mw-parser-output
     page = regex.sub("(?s).*<div class=\"mw-parser-output\">", "", page)
+    # on supprime tous les tableaux (notamment le tableau a droite du texte)
     page = regex.sub("(?s)(<table(?:(?:(?:.+?(?=<table|<\/table))(?:(?!<table)|(?R))*+)*?)<\/table>)", "", page)
-    links = regex.findall("(?s)(?:<div(?:(?:(?:.+?(?=<div|<\/div))(?:(?!<div)|(?R))*+)*?)<\/div>)|(?:<a href=\"(?P<url>\/wiki\/(?:.*?)?)\")|(?:\((?:(?:(?:.+?(?=\(|\)))(?:(?!\()|(?R))*+)*?)\))", page)
+    # on filtre tous les liens qui ne sont ni dans des div, ni dans des parentheses, ni ce qui est entre des slashs (pour le prononciations par exemple)
+    links = regex.findall("(?s)(?:<div(?:(?:(?:.+?(?=<div|<\/div))(?:(?!<div)|(?R))*+)*?)<\/div>)|(?:<a href=\"(?P<url>\/wiki\/(?:.*?)?)\")|(?:\((?:(?:(?:.+?(?=\(|\)))(?:(?!\()|(?R))*+)*?)\))|(?:\/(?=<)(?:.*?)\/(?=<))", page)
     # print links
     for link in links:
         if not ':' in link:
@@ -90,15 +88,24 @@ def initTableOutput(nbThread):
 def convergeToPhilo(numberOfThreads):
     initTableOutput(numberOfThreads)
     urlDepart = "https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Page_au_hasard"
-    for i in range(numberOfThreads):
+    i = 0
+    while i < numberOfThreads:
+    # for i in range(numberOfThreads):
         if(len(threading.enumerate()) <= numberOfThreads):
             t = threading.Thread(target=randomToPhilo, args=(urlDepart, len(threading.enumerate()), ), name='EntryToPhilo')
             t.daemon = True
             t.start()
+            i = i + 1
 
-    for thread in threading.enumerate():
-        if thread.name == 'EntryToPhilo':
-            thread.join()
+    # petite astuce pour pouvoir quitter le programme avec ctrl-c (a fix)
+    i = len(threading.enumerate())
+    while i > 1:
+        i = len(threading.enumerate())
+
+
+    # for thread in threading.enumerate():
+    #     if thread.name == 'EntryToPhilo':
+    #         thread.join()
 
 verrou = threading.RLock()
 tablePageName = []
