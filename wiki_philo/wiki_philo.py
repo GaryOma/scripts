@@ -28,7 +28,8 @@ def getPageName(page):
 
 def checkFirstLinkBottom(page):
     page = regex.sub("(?s).*<div class=\"mw-parser-output\">", "", page)
-    links = regex.findall("(?s)(?:<div(?:(?:(?:.+?(?=<div|<\/div))(?:(?!<div)|(?R))*+)*?)<\/div>)|(?:<table class=\"infobox_v2\"(?:.*?)<\/table>)|(?:<a href=\"(?P<url>\/wiki\/(?:.*?)?)\")", page)
+    page = regex.sub("(?s)(<table(?:(?:(?:.+?(?=<table|<\/table))(?:(?!<table)|(?R))*+)*?)<\/table>)", "", page)
+    links = regex.findall("(?s)(?:<div(?:(?:(?:.+?(?=<div|<\/div))(?:(?!<div)|(?R))*+)*?)<\/div>)|(?:<a href=\"(?P<url>\/wiki\/(?:.*?)?)\")|(?:\((?:(?:(?:.+?(?=\(|\)))(?:(?!\()|(?R))*+)*?)\))", page)
     # print links
     for link in links:
         if not ':' in link:
@@ -92,7 +93,7 @@ def convergeToPhilo(numberOfThreads):
     for i in range(numberOfThreads):
         if(len(threading.enumerate()) <= numberOfThreads):
             t = threading.Thread(target=randomToPhilo, args=(urlDepart, len(threading.enumerate()), ), name='EntryToPhilo')
-            t.setDaemon = True;
+            t.daemon = True
             t.start()
 
     for thread in threading.enumerate():
