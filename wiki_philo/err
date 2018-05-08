@@ -1,0 +1,130 @@
+Exception in thread EntryToPhilo:
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/threading.py", line 801, in __bootstrap_inner
+    self.run()
+  File "/usr/lib/python2.7/threading.py", line 754, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "./wiki_philo.py", line 56, in randomToPhilo
+    url = "https://fr.wikipedia.org" + firstLink
+TypeError: cannot concatenate 'str' and 'NoneType' objects
+
+Exception in thread EntryToPhilo:
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/threading.py", line 801, in __bootstrap_inner
+    self.run()
+  File "/usr/lib/python2.7/threading.py", line 754, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "./wiki_philo.py", line 56, in randomToPhilo
+    url = "https://fr.wikipedia.org" + firstLink
+TypeError: cannot concatenate 'str' and 'NoneType' objects
+
+Traceback (most recent call last):
+  File "./wiki_philo.py", line 117, in <module>
+    convergeToPhilo(numberOfThreads)
+  File "./wiki_philo.py", line 103, in convergeToPhilo
+    i = len(threading.enumerate())
+  File "/usr/lib/python2.7/threading.py", line 1182, in enumerate
+    with _active_limbo_lock:
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "./wiki_philo.py", line 117, in <module>
+    convergeToPhilo(numberOfThreads)
+  File "./wiki_philo.py", line 103, in convergeToPhilo
+    i = len(threading.enumerate())
+  File "/usr/lib/python2.7/threading.py", line 1183, in enumerate
+    return _active.values() + _limbo.values()
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "./wiki_philo.py", line 124, in <module>
+    convergeToPhilo(numberOfThreads)
+  File "./wiki_philo.py", line 110, in convergeToPhilo
+    i = len(threading.enumerate())
+  File "/usr/lib/python2.7/threading.py", line 1183, in enumerate
+    return _active.values() + _limbo.values()
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "./wiki_philo.py", line 125, in <module>
+    convergeToPhilo(numberOfThreads)
+  File "./wiki_philo.py", line 111, in convergeToPhilo
+    i = len(threading.enumerate())
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "./wiki_philo.py", line 126, in <module>
+    convergeToPhilo(numberOfThreads)
+  File "./wiki_philo.py", line 112, in convergeToPhilo
+    i = len(threading.enumerate())
+  File "/usr/lib/python2.7/threading.py", line 1183, in enumerate
+    return _active.values() + _limbo.values()
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "./wiki_philo.py", line 127, in <module>
+    convergeToPhilo(numberOfThreads)
+  File "./wiki_philo.py", line 113, in convergeToPhilo
+    i = len(threading.enumerate())
+  File "/usr/lib/python2.7/threading.py", line 1174, in enumerate
+    def enumerate():
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "./wiki_philo.py", line 127, in <module>
+    convergeToPhilo(numberOfThreads)
+  File "./wiki_philo.py", line 113, in convergeToPhilo
+    i = len(threading.enumerate())
+  File "/usr/lib/python2.7/threading.py", line 1183, in enumerate
+    return _active.values() + _limbo.values()
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "./wiki_philo.py", line 127, in <module>
+    convergeToPhilo(numberOfThreads)
+  File "./wiki_philo.py", line 113, in convergeToPhilo
+    i = len(threading.enumerate())
+  File "/usr/lib/python2.7/threading.py", line 1183, in enumerate
+    return _active.values() + _limbo.values()
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "./wiki_philo.py", line 127, in <module>
+    convergeToPhilo(numberOfThreads)
+  File "./wiki_philo.py", line 113, in convergeToPhilo
+    i = len(threading.enumerate())
+  File "/usr/lib/python2.7/threading.py", line 1183, in enumerate
+    return _active.values() + _limbo.values()
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "./wiki_philo.py", line 128, in <module>
+    convergeToPhilo(numberOfThreads)
+  File "./wiki_philo.py", line 114, in convergeToPhilo
+    i = len(threading.enumerate())
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "./wiki_philo.py", line 128, in <module>
+    convergeToPhilo(numberOfThreads)
+  File "./wiki_philo.py", line 114, in convergeToPhilo
+    i = len(threading.enumerate())
+  File "/usr/lib/python2.7/threading.py", line 1183, in enumerate
+    return _active.values() + _limbo.values()
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "./wiki_philo.py", line 128, in <module>
+    convergeToPhilo(numberOfThreads)
+  File "./wiki_philo.py", line 114, in convergeToPhilo
+    i = len(threading.enumerate())
+  File "/usr/lib/python2.7/threading.py", line 1183, in enumerate
+    return _active.values() + _limbo.values()
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "./wiki_philo.py", line 127, in <module>
+    convergeToPhilo(numberOfThreads)
+  File "./wiki_philo.py", line 113, in convergeToPhilo
+    i = len(threading.enumerate())
+KeyboardInterrupt
+  File "./wiki_philo.py", line 64
+    pageName = pageName +
+                        ^
+SyntaxError: invalid syntax
+  File "./wiki_philo.py", line 64
+    pageName = pageName +
+                        ^
+SyntaxError: invalid syntax
+  File "./wiki_philo.py", line 64
+    pageName = pageName +
+                        ^
+SyntaxError: invalid syntax

@@ -3,7 +3,7 @@
 
 import urllib2
 import requests
-import BeautifulSoup
+# import BeautifulSoup
 import sys
 import re
 import datetime

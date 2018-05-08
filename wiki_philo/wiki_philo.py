@@ -47,16 +47,38 @@ def checkFirstLinkTop(page):
 
 def randomToPhilo(url, threadNumber):
     pageName = ""
-    printableList = ""
-    while pageName != "Philosophie":
+    nbLinks = 0
+    printableList = []
+    cachedEntry = []
+    ended = False
+    while not ended:
+        nbLinks = nbLinks + 1
         page = getPage(url)
         pageName = getPageName(page)
-        printableList = printableList + "->" + pageName
         firstLink = checkFirstLinkBottom(page)
-        url = "https://fr.wikipedia.org" + firstLink
-        with verrou:
-            addEntryTableOutput(threadNumber, pageName)
-            printTableOutput()
+        printableList.append(pageName)
+        cachedEntry.append(pageName)
+        if firstLink != None:
+            url = "https://fr.wikipedia.org" + firstLink
+        else:
+            ended = True
+            printableList.append(" |||NOLINK|||")
+            cachedEntry.append(" |||NOLINK|||")
+        for entry in printableList[:-1]:
+            if pageName == entry:
+                ended = True
+                printableList.append(" |||BOUCLE|||")
+                cachedEntry.append(" |||BOUCLE|||")
+        if pageName == "Philosophie":
+            pageName = "{} en {} liens".format(pageName, nbLinks)
+            ended = True
+            printableList.append(" {} LINKS".format(nbLinks))
+            cachedEntry.append(" {} LINKS".format(nbLinks))
+        if not verrou._is_owned():
+            with verrou:
+                addEntryTableOutput(threadNumber, cachedEntry)
+                printTableOutput()
+                cachedEntry = []
 
 
 def printTableOutput():
@@ -71,14 +93,17 @@ def printTableOutput():
         outputFinal = outputFinal + outputLine + "\n"
         outputLine = ""
     for i in range(len(tablePageName)):
+        # remonte une ligne
         sys.stdout.write("\033[F")
+        # efface la ligne
         sys.stdout.write("\033[K")
     sys.stdout.write(outputFinal)
     sys.stdout.flush()
 
 
-def addEntryTableOutput(threadNb, entry):
-    tablePageName[threadNb - 1].append(entry)
+def addEntryTableOutput(threadNb, cEntry):
+    for entry in cEntry:
+        tablePageName[threadNb - 1].append(entry)
 
 def initTableOutput(nbThread):
     for i in xrange(nbThread):
@@ -116,11 +141,3 @@ if __name__ == "__main__":
     numberOfThreads = int(sys.argv[1])
     convergeToPhilo(numberOfThreads)
     url = "https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Page_au_hasard"
-    #
-    # while (1):
-    #     page = getPage(url)
-    #     pageName = getPageName(page)
-    #     print pageName
-    #     firstLink = checkFirstLinkBottom(page)
-    #     print firstLink
-    #     url = "https://fr.wikipedia.org" + firstLink
