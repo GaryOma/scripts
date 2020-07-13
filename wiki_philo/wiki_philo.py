@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import urllib.request
+import requests
 import regex
 import sys
 import os
@@ -9,6 +10,7 @@ import threading
 
 
 def getPage(url):
+    # return requests.get(url).text
     return urllib.request.urlopen(url).read().decode('utf-8')
 
 
