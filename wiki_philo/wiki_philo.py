@@ -1,49 +1,46 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import urllib2
+import urllib.request
 import regex
 import sys
 import os
 import threading
 
-# (?s)<div(?:(?:[^(<]*+(?:(?!<div)|(?0))*+)*+)<\/div>
-
-# (<div(?:(?:(.+?(?=<div|<\/div))((?!<div)|(?1))*+)*?)<\/div>)
-
-# interessant :(?s)<div class=\"mw-parser-output\"(?:.*?)|(?:<a href=\"(?P<url>\/wiki\/(?:.*?)?)\")|(?:<div(?:(?:(?:.+?(?=<div|<\/div))(?:(?!<div)|(?0))*+)*?)<\/div>)
 
 def getPage(url):
-    return urllib2.urlopen(url).read()
+    return urllib.request.urlopen(url).read().decode('utf-8')
+
 
 def getPageName(page):
-    name = regex.search("<h1 id=\"firstHeading\" class=\"firstHeading\" lang=\"fr\">(?P<nomArticle>.*?)<\/h1>", page).group(1)
-    name = regex.sub("<(.*?)>", "", name)
+    name = regex.search(
+        r"<h1 id=\"firstHeading\" class=\"firstHeading\" "
+        r"lang=\"fr\">(?P<nomArticle>.*?)<\/h1>", page).group(1)
+    name = regex.sub(r"<(.*?)>", "", name)
     return name
+
 
 def checkFirstLinkBottom(page):
     # ne va chercher que dans la div mw-parser-output
-    page = regex.sub("(?s).*<div class=\"mw-parser-output\">", "", page)
+    page = regex.sub(r"(?s).*<div class=\"mw-parser-output\">", "", page)
     # on supprime tous les tableaux (notamment le tableau a droite du texte)
-    page = regex.sub("(?s)(<table(?:(?:(?:.+?(?=<table|<\/table))(?:(?!<table)|(?R))*+)*?)<\/table>)", "", page)
-    # on filtre tous les liens qui ne sont ni dans des div, ni dans des parentheses, ni ce qui est entre des slashs (pour le prononciations par exemple)
-    links = regex.findall("(?s)(?:<div(?:(?:(?:.+?(?=<div|<\/div))(?:(?!<div)|(?R))*+)*?)<\/div>)|(?:<a href=\"(?P<url>\/wiki\/(?:.*?)?)\")|(?:\((?:(?:(?:.+?(?=\(|\)))(?:(?!\()|(?R))*+)*?)\))|(?:\/(?=<)(?:.*?)\/(?=<))", page)
+    page = regex.sub(
+        r"(?s)(<table(?:(?:(?:.+?(?=<table|<\/table))(?:(?!<table)|"
+        r"(?R))*+)*?)<\/table>)", "", page)
+    # on filtre tous les liens qui ne sont ni dans des div,
+    # ni dans des parentheses, ni ce qui est entre des slashs
+    # (pour le prononciations par exemple)
+    links = regex.findall(
+        r"(?s)(?:<div(?:(?:(?:.+?(?=<div|<\/div))(?:(?!<div)|"
+        r"(?R))*+)*?)<\/div>)|(?:<a href=\"(?P<url>\/wiki\/(?:.*?)?)\")|"
+        r"(?:\((?:(?:(?:.+?(?=\(|\)))(?:(?!\()|(?R))*+)*?)\))|"
+        r"(?:\/(?=<)(?:.*?)\/(?=<))", page)
     # print links
     for link in links:
-        if not ':' in link:
+        if ':' not in link:
             if link != "":
                 return link
 
-
-def checkFirstLinkTop(page):
-    links = re.findall("(?s)<div class=\"mw-parser-output\">(?:.*?)|(?:<a href=\"(?P<url>/wiki/(?:.*?)?)\")(?:.*?)<\/div>", page)
-
-    for link in links:
-        if not ':' in link:
-            if link != "":
-                print link
-                # return link
-    print 'error'
 
 def randomToPhilo(url, threadNumber):
     pageName = ""
@@ -89,7 +86,7 @@ def printTableOutput():
         for entry in tablePageName[i]:
             outputLine = outputLine + "->" + entry
         if len(outputLine) > columnsScreen:
-            outputLine = outputLine[(len(outputLine)- columnsScreen):]
+            outputLine = outputLine[(len(outputLine) - columnsScreen):]
         outputFinal = outputFinal + outputLine + "\n"
         outputLine = ""
     for i in range(len(tablePageName)):
@@ -105,19 +102,22 @@ def addEntryTableOutput(threadNb, cEntry):
     for entry in cEntry:
         tablePageName[threadNb - 1].append(entry)
 
+
 def initTableOutput(nbThread):
-    for i in xrange(nbThread):
+    for i in range(nbThread):
         tablePageName.append([])
-        print i + 1
+        print(i + 1)
+
 
 def convergeToPhilo(numberOfThreads):
     initTableOutput(numberOfThreads)
     urlDepart = "https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Page_au_hasard"
     i = 0
     while i < numberOfThreads:
-    # for i in range(numberOfThreads):
+        # for i in range(numberOfThreads):
         if(len(threading.enumerate()) <= numberOfThreads):
-            t = threading.Thread(target=randomToPhilo, args=(urlDepart, len(threading.enumerate()), ), name='EntryToPhilo')
+            t = threading.Thread(target=randomToPhilo, args=(
+                urlDepart, len(threading.enumerate()), ), name='EntryToPhilo')
             t.daemon = True
             t.start()
             i = i + 1
@@ -127,10 +127,10 @@ def convergeToPhilo(numberOfThreads):
     while i > 1:
         i = len(threading.enumerate())
 
-
     # for thread in threading.enumerate():
     #     if thread.name == 'EntryToPhilo':
     #         thread.join()
+
 
 verrou = threading.RLock()
 tablePageName = []
